@@ -15,12 +15,6 @@ export class BarraComponent implements OnInit {
       responsive: true,
       // We use these empty structures as placeholders for dynamic theming.
       scales: { xAxes: [{}], yAxes: [{}] },
-      plugins: {
-        datalabels: {
-          anchor: 'end',
-          align: 'end',
-        }
-      }
     };
     public barChartLabels: Label[] = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
     public barChartType: ChartType = 'bar';

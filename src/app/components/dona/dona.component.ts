@@ -13,9 +13,7 @@ export class DonaComponent implements OnInit {
   // Doughnut
  public doughnutChartLabels: Label[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
  public doughnutChartData: MultiDataSet = [
-   [350, 450, 100],
-   [50, 150, 120],
-   [250, 130, 70],
+   [350, 450, 100]
  ];
 
  public doughnutChartType: ChartType = 'doughnut';
@@ -37,9 +35,9 @@ export class DonaComponent implements OnInit {
 
   public random_num(){
     this.doughnutChartData = [
+      [Math.round(Math.random() * 100),
       Math.round(Math.random() * 100),
-      Math.round(Math.random() * 100),
-      Math.round(Math.random() * 100)
+      Math.round(Math.random() * 100)]
     ];
   }
 
